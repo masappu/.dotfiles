@@ -15,8 +15,6 @@ eval "$(rbenv init - zsh)"
 export JAVA_HOME=$(/usr/libexec/java_home -v21)
 export PATH="$JAVA_HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH"
 
-# xcode
-# alias start='open my-dear.xcworkspace'
 alias xdd='echo "Deleting Xcode DerivedData..."; rm -rf ~/Library/Developer/Xcode/DerivedData && echo "✅ Done!"'
 
 # Codex prompt editor (Ctrl+G) uses VISUAL, then EDITOR
