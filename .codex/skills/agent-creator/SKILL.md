@@ -31,7 +31,7 @@ agent の振る舞いは可能な限り **skill 側に分離**し、agent config
   追加する agent 名（`kebab-case` 推奨）
 
 - `role_summary`  
-  agent の責務を **1文で表した要約**
+  agent の責務を表した要約
 
 - `task_type`  
   `read-only` または `workspace-write`
@@ -70,7 +70,6 @@ agent config は「詳細設定を書く場所」ではあるが
 
 - parent config で安全に継承できる設定は **重複定義しない**
 - agent 固有の差分だけを定義する
-- 再利用性を優先する
 - 1 agent = 1責務 を守る
 
 ---
@@ -149,12 +148,6 @@ agent の **思考深度（推論量）**を制御する。
 | runner | low |
 | writer | low |
 
-### 禁止事項
-
-- 全 agent に `xhigh` を設定しない
-- runner / writer に高 reasoning を設定しない
-- reasoning を skill の不足の代替にしない
-
 ---
 
 ## sandbox_mode
@@ -217,7 +210,6 @@ agent に **常に適用したい固定ルール**を定義する。
 
 ### 記述ルール
 
-- 3〜8行程度
 - 最小限
 - skill と重複させない
 - 日本語で記述する
