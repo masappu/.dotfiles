@@ -1,0 +1,14 @@
+# ignore everything
+*
+
+# track config
+!.gitignore
+!AGENTS.md
+!config.toml
+!agents/
+!agents/**
+!skills/
+!skills/**
+skills/.system/
+!rules/
+!rules/**

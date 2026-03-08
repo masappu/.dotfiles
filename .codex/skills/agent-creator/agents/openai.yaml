@@ -1,0 +1,5 @@
+version: 1
+agent:
+  display_name: "Agent Creator"
+  short_description: "Codex multi-agent 用の sub agent 設定を追加"
+  default_prompt: "$agent-creator を使って、新しい sub agent を追加してください。~/.codex/config.toml の更新と ~/.codex/agents/<agent-name>.toml の作成を行います。"

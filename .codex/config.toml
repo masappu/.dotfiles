@@ -1,0 +1,32 @@
+model = "gpt-5.4"
+review_model = "gpt-5.4"
+model_reasoning_effort = "xhigh"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
+notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
+
+[features]
+multi_agent = true
+
+[sandbox_workspace_write]
+network_access = true
+
+[projects."/Users/masa"]
+trust_level = "trusted"
+
+[projects."/Users/masa/.dotfiles"]
+trust_level = "trusted"
+
+[agents]
+max_threads = 6
+max_depth = 3
+
+[agents.agent-creator]
+description = "Codex sub agent 設定を追加・更新する。"
+config_file = "agents/agent-creator/agent-creator.toml"
+
+[agents.skill-creator]
+description = "Codex skill を作成・更新する。"
+config_file = "agents/skill-creator/skill-creator.toml"

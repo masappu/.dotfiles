@@ -1,0 +1,4 @@
+interface:
+  display_name: "拡張 Skill Creator"
+  short_description: "新規 skill 作成を通常フローか multi-agent 構成か判定する"
+  default_prompt: "$extra-skill-creator を使って、この skill 作成依頼を通常の skill-creator フローで進めるか、multi-agent 構成へ分解して承認後に実装するか判定してください。"
